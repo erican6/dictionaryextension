@@ -1,3 +1,4 @@
+//Google non-official API setup complete
 $('#wordsearch').on('submit', function(e) {
     e.preventDefault();    
     let api = 'https://api.dictionaryapi.dev/api/v2/entries/en/';
