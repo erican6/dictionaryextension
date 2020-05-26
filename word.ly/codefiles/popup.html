@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="loader.css">
+
+    <script src="minified/jquery.min.js"></script>
+    <script src="minified/popper.min.js"></script>
+    <script src="minified/bootstrap.min.js"></script>
+    <script src="minified/axios.min.js"></script>
+    <script src="minified/fontawesome.min.js"></script>
+
+    <title>Test Dic</title>
+    
+<style>
+    .nav>li>a {
+        background-color: #FDFAF7;
+        color: #24272B;
+    }
+    .around {
+        border: 2px solid #cac8c5;
+        padding: 3px;
+        margin-bottom: 8px;
+    }
+    .positioning {
+        padding: 8px;
+    }
+</style>
+
+</head>
+<body style="background-color: #F8F8F8;">
+    <img src="icon.png" style="margin-left: 130px; width: 35%; height: 35%;">
+    <div class="card" style="width: 410px; height: 150px; margin: auto;">
+        <div class="card-body" style="background-color: #FAF0E6;">
+            <div class="text-center">
+                <form style="margin-top: 15px;" id="wordsearch">
+                    <div class="form-group" style="width: 90%;margin: auto;">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Word" id="word" autocomplete="off">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-outline-secondary"><i class="fas fa-search"></i></button> 
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form style="margin-top: 10px;" id="check">
+                    <div class="form-check" style="margin-top: 20px;">
+                        <input type="checkbox" class="form-check-input" id="box">
+                        <label class="form-check-label" for="box" style="font-family: Garamond;"><i>Search Last Highlighted Word (After Install)</i></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="loader-wrapper"><span class="loader"><span class="loader-inner"></span></span></div>
+    <footer class="container">
+        <p style="margin-bottom: -10px; font-size: 10px; text-align: center;">&copy; 2020 Word.ly - Utilization of Non-Official Google & Datamuse API</p>
+    </footer>
+</body>
+<script src="popup.js"></script>
+</html>
