@@ -103,7 +103,7 @@ function datamuses(synout,word) {
         indexs = Object.keys(syns);
         lens = indexs.length;
         if(lens>0){
-            synout = synout+'<h5>Synonyms From DataMuse</h5><ol class="list-inline">';
+            synout = synout+'<h5>Extra Synonyms</h5><ol class="list-inline">';
             for(l=0;l<lens;l++) {
                 syn = syns[l]['word'];
                 synout = synout+'<li class="list-inline-item around">'+syn+'</li>';
@@ -130,7 +130,7 @@ function datamusea(synout,word) {
         indexa = Object.keys(ants);
         lena = indexa.length;
         if(lena>0) {
-            synout = synout+'<h5>Antonyms From DataMuse</h5><ol class="list-inline">';
+            synout = synout+'<h5>Antonyms</h5><ol class="list-inline">';
             for(m=0;m<lena;m++) {
                 ant = ants[m]['word'];
                 synout = synout+'<li class="list-inline-item around">'+ant+'</li>';
